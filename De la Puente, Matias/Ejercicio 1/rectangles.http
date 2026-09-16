@@ -18,7 +18,7 @@ POST http://localhost:3000/api/rectangles/calculate
 Content-Type: application/json
 
 {
-  "base": 7,
+  "base": 6,
   "altura": 3
 }
 
