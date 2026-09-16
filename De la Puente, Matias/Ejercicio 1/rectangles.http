@@ -1,0 +1,32 @@
+### Obtener el área de un rectángulo
+GET http://localhost:3000/api/rectangles/area?base=5&altura=3
+
+### Obtener el perímetro de un rectángulo
+GET http://localhost:3000/api/rectangles/perimeter?base=5&altura=3
+
+### Identificar un cuadrado
+GET http://localhost:3000/api/rectangles/classify?base=4&altura=4
+
+### Identificar un rectángulo
+GET http://localhost:3000/api/rectangles/classify?base=6&altura=2
+
+### Probar datos inválidos
+GET http://localhost:3000/api/rectangles/area?base=-2&altura=3
+
+### Calcular todos los datos mediante POST
+POST http://localhost:3000/api/rectangles/calculate
+Content-Type: application/json
+
+{
+  "base": 7,
+  "altura": 3
+}
+
+### Probar POST con un valor inválido
+POST http://localhost:3000/api/rectangles/calculate
+Content-Type: application/json
+
+{
+  "base": 0,
+  "altura": 5
+}

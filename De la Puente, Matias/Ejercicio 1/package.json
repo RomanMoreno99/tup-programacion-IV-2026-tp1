@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio-1-rectangulos",
+  "version": "1.0.0",
+  "description": "API para calcular perímetro, superficie y clasificar rectángulos",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
