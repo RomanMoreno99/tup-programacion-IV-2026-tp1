@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio-3-tareas",
+  "version": "1.0.0",
+  "description": "API para administrar tareas y su estado de avance",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,52 @@
+
+```http
+### Obtener todas las tareas
+GET http://localhost:3000/api/tareas
+
+### Obtener tareas completadas
+GET http://localhost:3000/api/tareas/completadas
+
+### Obtener tareas pendientes
+GET http://localhost:3000/api/tareas/pendientes
+
+### Obtener una tarea específica
+GET http://localhost:3000/api/tareas/Revisar%20documento
+
+### Crear una tarea válida
+POST http://localhost:3000/api/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Estudiar para el examen",
+  "completada": false
+}
+
+### Crear una tarea con nombre duplicado
+POST http://localhost:3000/api/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Revisar documento",
+  "completada": true
+}
+
+### Crear una tarea con estado inválido
+POST http://localhost:3000/api/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Leer apuntes",
+  "completada": "si"
+}
+
+### Modificar una tarea
+PUT http://localhost:3000/api/tareas/Preparar%20presentaci%C3%B3n
+Content-Type: application/json
+
+{
+  "nombre": "Preparar presentación",
+  "completada": true
+}
+
+### Eliminar una tarea
+DELETE http://localhost:3000/api/tareas/Estudiar%20para%20el%20examen
