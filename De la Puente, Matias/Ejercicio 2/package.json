@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio-2-alumnos",
+  "version": "1.0.0",
+  "description": "API para manejar alumnos y notas",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,55 @@
+
+```http
+### Obtener todos los alumnos
+GET http://localhost:3000/api/alumnos
+
+### Obtener un alumno específico
+GET http://localhost:3000/api/alumnos/Ana
+
+### Crear un alumno válido
+POST http://localhost:3000/api/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "Carlos",
+  "notas": [7, 8, 9]
+}
+
+### Crear un alumno con nombre duplicado
+POST http://localhost:3000/api/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "Ana",
+  "notas": [5, 6, 7]
+}
+
+### Crear un alumno con notas inválidas
+POST http://localhost:3000/api/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "Marta",
+  "notas": [11, 6, 7]
+}
+
+### Actualizar un alumno
+PUT http://localhost:3000/api/alumnos/Carlos
+Content-Type: application/json
+
+{
+  "nombre": "Carlos",
+  "notas": [10, 9, 8]
+}
+
+### Actualizar con nombre duplicado
+PUT http://localhost:3000/api/alumnos/Ana
+Content-Type: application/json
+
+{
+  "nombre": "Luis",
+  "notas": [8, 8, 8]
+}
+
+### Eliminar un alumno
+DELETE http://localhost:3000/api/alumnos/Carlos
